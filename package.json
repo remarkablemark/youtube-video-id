@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Extracts the YouTube video ID from a url or string.",
   "author": "Mark <mark@remarkablemark.org>",
+  "scripts": {
+    "test": "mocha"
+  },
   "keywords": [
     "youtube",
     "video",
@@ -10,5 +13,9 @@
     "url",
     "string"
   ],
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^3.0.2"
+  },
   "license": "MIT"
 }
