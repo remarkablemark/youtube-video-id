@@ -18,7 +18,8 @@
   "dependencies": {},
   "devDependencies": {
     "eslint": "^3.4.0",
-    "mocha": "^3.0.2"
+    "mocha": "^3.0.2",
+    "webpack": "^1.13.2"
   },
   "license": "MIT"
 }
