@@ -1,5 +1,10 @@
 # youtube-video-id
 
+[![NPM](https://nodei.co/npm/youtube-video-id.png)](https://nodei.co/npm/youtube-video-id/)
+
+[![NPM version](https://img.shields.io/npm/v/youtube-video-id.svg)](https://www.npmjs.com/package/youtube-video-id)
+[![Build Status](https://travis-ci.org/remarkablemark/youtube-video-id.svg?branch=master)](https://travis-ci.org/remarkablemark/youtube-video-id)
+
 Extracts the YouTube video ID from a url or string:
 
 ```
