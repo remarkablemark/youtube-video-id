@@ -16,4 +16,4 @@ $ npm test
 
 ## License
 
-MIT
+[MIT](https://github.com/remarkablemark/youtube-video-id/blob/master/LICENSE)
