@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "Extracts the YouTube video ID from a url or string.",
   "author": "Mark <mark@remarkablemark.org>",
+  "main": "index.js",
   "scripts": {
     "test": "mocha",
     "lint": "eslint ."
