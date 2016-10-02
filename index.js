@@ -7,6 +7,9 @@
  * @return {String}        - The video ID.
  */
 function getYouTubeVideoId(string) {
+    if (typeof string !== 'string') {
+        throw new TypeError('First argument must be a string.');
+    }
     return string;
 }
 
