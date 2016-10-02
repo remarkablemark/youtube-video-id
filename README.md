@@ -19,8 +19,19 @@ YouTubeVideoId('X3pTXG9a1oQ');
 
 ## Installation
 
+NPM:
+
 ```sh
-$ npm install
+$ npm install youtube-video-id
+```
+
+CDN:
+
+```html
+<script src="https://unpkg.com/youtube-video-id@latest/dist/youtube-video-id.min.js">
+<script>
+    console.log(YouTubeVideoId('https://www.youtube.com/watch?v=F2uovvU-dLA'));
+</script>
 ```
 
 ## Testing
