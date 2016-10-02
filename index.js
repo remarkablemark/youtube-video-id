@@ -3,9 +3,13 @@
 /**
  * YouTube url regex.
  *
- * Pattern: https://www.youtube.com/watch?v=<ID>
+ * Patterns:
+ *   https://www.youtube.com/watch?v=<ID>
+ *   https://www.youtube.com/watch?v=<ID>&feature=youtu.be
+ *   https://youtu.be/<ID>
+ *   https://youtu.be/<ID>?t=1s
  */
-var regex = /youtube\.com\/watch\?v=([a-zA-Z0-9]+)/;
+var regex = /(youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9]+)/;
 
 /**
  * Get the YouTube video ID from a url or string.
@@ -18,8 +22,8 @@ function getYouTubeVideoId(string) {
         throw new TypeError('First argument must be a string.');
     }
     var match = string.match(regex);
-    if (match && match.length) {
-        return match[1];
+    if (match && match.length > 1) {
+        return match[2];
     }
     return string;
 }
