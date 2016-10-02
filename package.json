@@ -5,6 +5,7 @@
   "author": "Mark <mark@remarkablemark.org>",
   "main": "index.js",
   "scripts": {
+    "prepublish": "npm run build",
     "build": "webpack index.js dist/youtube-video-id.min.js -p --output-library YouTubeVideoId --output-library-target umd",
     "test": "mocha",
     "lint": "eslint ."
