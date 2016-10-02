@@ -4,7 +4,8 @@
   "description": "Extracts the YouTube video ID from a url or string.",
   "author": "Mark <mark@remarkablemark.org>",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "lint": "eslint ."
   },
   "keywords": [
     "youtube",
@@ -15,6 +16,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
+    "eslint": "^3.4.0",
     "mocha": "^3.0.2"
   },
   "license": "MIT"
