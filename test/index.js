@@ -19,6 +19,23 @@ describe('getYouTubeVideoId()', function() {
         });
     });
 
+    it('gets the ID from long url', function() {
+        assert.equal(
+            getYouTubeVideoId('https://www.youtube.com/watch?v=X3pTXG9a1oQ'),
+            'X3pTXG9a1oQ'
+        );
+
+        assert.equal(
+            getYouTubeVideoId('http://www.youtube.com/watch?v=X3pTXG9a1oQ'),
+            'X3pTXG9a1oQ'
+        );
+
+        assert.equal(
+            getYouTubeVideoId('https://www.youtube.com/watch?v=X3pTXG9a1oQ&feature=youtu.be'),
+            'X3pTXG9a1oQ'
+        );
+    });
+
     it('returns passed string if not a url', function() {
         assert.equal(getYouTubeVideoId('X3pTXG9a1oQ'), 'X3pTXG9a1oQ');
     });
