@@ -24,11 +24,10 @@
     "url",
     "string"
   ],
-  "dependencies": {},
   "devDependencies": {
-    "eslint": "^3.4.0",
+    "eslint": "^4.1.1",
     "mocha": "^3.0.2",
-    "webpack": "^1.13.2"
+    "webpack": "^3.0.0"
   },
   "license": "MIT"
 }
