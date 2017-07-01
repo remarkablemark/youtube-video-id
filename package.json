@@ -6,7 +6,10 @@
   "main": "index.js",
   "scripts": {
     "prepublish": "npm run build",
-    "build": "webpack index.js dist/youtube-video-id.min.js -p --output-library YouTubeVideoId --output-library-target umd",
+    "build": "npm run clean && npm run build:min && npm run build:unmin",
+    "build:min": "webpack index.js dist/youtube-video-id.min.js -p --output-library YouTubeVideoId --output-library-target umd",
+    "build:unmin": "webpack index.js dist/youtube-video-id.js --output-library YouTubeVideoId --output-library-target umd",
+    "clean": "rm -rf dist",
     "test": "mocha",
     "lint": "eslint . --ignore-path .gitignore"
   },
