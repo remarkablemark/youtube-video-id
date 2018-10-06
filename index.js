@@ -9,7 +9,7 @@
  *   https://youtu.be/<ID>
  *   https://youtu.be/<ID>?t=1s
  */
-var regex = /(youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]+)/;
+var regex = /(youtube\.com\/watch\?v=|youtu\.be\/)([0-9A-Za-z_-]{10}[048AEIMQUYcgkosw])/;
 
 /**
  * Get the YouTube video ID from a url or string.
