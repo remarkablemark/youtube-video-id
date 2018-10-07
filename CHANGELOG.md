@@ -1,9 +1,13 @@
 # Change Log
 
-All notable changes to this project will be documented in this file.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-The format is based on [Keep a Changelog](http://keepachangelog.com)
-and this project adheres to [Semantic Versioning](http://semver.org).
+<a name="0.0.3"></a>
+## [0.0.3](https://github.com/remarkablemark/youtube-video-id/compare/v0.0.2...v0.0.3) (2018-10-07)
+
+### Features
+
+* use maximally-constrained regex for videoId (see [explanation](https://webapps.stackexchange.com/questions/54443/format-for-id-of-youtube-video/101153#101153)) ([345e6f2](https://github.com/remarkablemark/youtube-video-id/commit/345e6f2))
 
 ## [0.0.2](https://github.com/remarkablemark/youtube-video-id/compare/v0.0.1...v0.0.2) - 2017-07-12
 
