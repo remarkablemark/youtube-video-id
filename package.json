@@ -7,8 +7,8 @@
   "scripts": {
     "prepublish": "npm run build",
     "build": "npm run clean && npm run build:min && npm run build:unmin",
-    "build:min": "webpack index.js dist/youtube-video-id.min.js -p --output-library YouTubeVideoId --output-library-target umd",
-    "build:unmin": "webpack index.js dist/youtube-video-id.js --output-library YouTubeVideoId --output-library-target umd",
+    "build:min": "webpack index.js -o dist/youtube-video-id.min.js -p --output-library YouTubeVideoId --output-library-target umd --mode production",
+    "build:unmin": "webpack index.js -o dist/youtube-video-id.js --output-library YouTubeVideoId --output-library-target umd --mode development",
     "clean": "rm -rf dist",
     "test": "mocha",
     "lint": "eslint . --ignore-path .gitignore",
@@ -34,7 +34,8 @@
     "eslint": "^4.1.1",
     "istanbul": "^0.4.5",
     "mocha": "^3.0.2",
-    "webpack": "^3.0.0"
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
   },
   "license": "MIT"
 }
