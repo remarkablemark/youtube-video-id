@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Use library with RequireJS (AMD)</title>
-    </head>
-    <body>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script>
-        <script>
-            requirejs(['../dist/youtube-video-id.min'], function(YouTubeVideoId) {
-                console.log(YouTubeVideoId('https://www.youtube.com/watch?v=X3pTXG9a1oQ'));
-                console.log(YouTubeVideoId('https://youtu.be/k66bOHX8MnY'));
-            });
-        </script>
-    </body>
-</html>
+<!-- using the library with RequireJS (AMD) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script>
+<script>
+  requirejs(['../dist/youtube-video-id.min'], function(YouTubeVideoId) {
+    console.log(YouTubeVideoId('https://www.youtube.com/watch?v=X3pTXG9a1oQ'));
+    console.log(YouTubeVideoId('https://youtu.be/k66bOHX8MnY'));
+  });
+</script>
