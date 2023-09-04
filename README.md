@@ -3,8 +3,8 @@
 [![NPM](https://nodei.co/npm/youtube-video-id.png)](https://nodei.co/npm/youtube-video-id/)
 
 [![NPM version](https://img.shields.io/npm/v/youtube-video-id.svg)](https://www.npmjs.com/package/youtube-video-id)
-[![Build Status](https://travis-ci.org/remarkablemark/youtube-video-id.svg?branch=master)](https://travis-ci.org/remarkablemark/youtube-video-id)
-[![Coverage Status](https://coveralls.io/repos/github/remarkablemark/youtube-video-id/badge.svg?branch=master)](https://coveralls.io/github/remarkablemark/youtube-video-id?branch=master)
+[![build](https://github.com/remarkablemark/youtube-video-id/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablemark/youtube-video-id/actions/workflows/build.yml)
+[![codecov](https://codecov.io/gh/remarkablemark/youtube-video-id/graph/badge.svg?token=PQL6PG63WG)](https://codecov.io/gh/remarkablemark/youtube-video-id)
 
 Extracts the YouTube video ID from a url or string:
 
@@ -17,13 +17,13 @@ YouTubeVideoId(string)
 [NPM](https://www.npmjs.com/package/youtube-video-id):
 
 ```sh
-$ npm install youtube-video-id
+npm install youtube-video-id
 ```
 
 [Yarn](https://yarn.fyi/youtube-video-id):
 
 ```sh
-$ yarn add youtube-video-id
+yarn add youtube-video-id
 ```
 
 [CDN](https://unpkg.com/youtube-video-id/):
@@ -60,8 +60,8 @@ Also see [JSFiddle](https://jsfiddle.net/remarkablemark/93fkfb22/) and other [ex
 ## Testing
 
 ```sh
-$ npm test
-$ npm run lint
+npm test
+npm run lint
 ```
 
 ## License
