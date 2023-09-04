@@ -2,5 +2,4 @@ test
 coverage
 examples
 .eslint*
-.travis*
 .npmignore
