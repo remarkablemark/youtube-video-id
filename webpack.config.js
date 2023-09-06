@@ -9,7 +9,5 @@ var webpack = require('webpack');
  * Config.
  */
 module.exports = {
-    plugins: [
-        new webpack.optimize.ModuleConcatenationPlugin()
-    ]
+  plugins: [new webpack.optimize.ModuleConcatenationPlugin()]
 };

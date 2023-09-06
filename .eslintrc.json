@@ -1,0 +1,13 @@
+{
+  "env": {
+    "jest": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended"],
+  "plugins": ["prettier"],
+  "rules": {
+    "no-console": "error",
+    "no-debugger": "error",
+    "prettier/prettier": "error"
+  }
+}
