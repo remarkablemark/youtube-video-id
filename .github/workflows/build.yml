@@ -24,7 +24,7 @@ jobs:
         run: npm run lint
 
       - name: Run tests
-        run: npm run cover
+        run: npm run test:ci
 
       - name: Codecov
         uses: codecov/codecov-action@v3

@@ -3,7 +3,6 @@
 /**
  * Module dependencies.
  */
-var assert = require('assert');
 var getYouTubeVideoId = require('../index');
 
 /**
@@ -13,51 +12,57 @@ describe('getYouTubeVideoId()', function() {
 
     it('errors if the first parameter is not a string', function() {
         [undefined, null, {}, [], 1, Function].forEach(function(parameter) {
-            assert.throws(function() {
+            expect(function() {
                 getYouTubeVideoId(parameter);
-            }, TypeError);
+            }).toThrow(TypeError)
         });
     });
 
     it('gets the ID from long url', function() {
-        assert.equal(
-            getYouTubeVideoId('https://www.youtube.com/watch?v=X3pTXG9a1oQ'),
+        expect(
+            getYouTubeVideoId('https://www.youtube.com/watch?v=X3pTXG9a1oQ')
+        ).toBe(
             'X3pTXG9a1oQ'
         );
 
-        assert.equal(
-            getYouTubeVideoId('http://www.youtube.com/watch?v=F2uovvU-dLA'),
+        expect(
+            getYouTubeVideoId('http://www.youtube.com/watch?v=F2uovvU-dLA')
+        ).toBe(
             'F2uovvU-dLA'
         );
 
-        assert.equal(
-            getYouTubeVideoId('https://www.youtube.com/watch?v=k66bOHX8MnY&feature=youtu.be'),
+        expect(
+            getYouTubeVideoId('https://www.youtube.com/watch?v=k66bOHX8MnY&feature=youtu.be')
+        ).toBe(
             'k66bOHX8MnY'
         );
     });
 
     it('gets the ID from short url', function() {
-        assert.equal(
-            getYouTubeVideoId('https://youtu.be/Yqnk_kjVPH4'),
+        expect(
+            getYouTubeVideoId('https://youtu.be/Yqnk_kjVPH4')
+        ).toBe(
             'Yqnk_kjVPH4'
         );
 
-        assert.equal(
-            getYouTubeVideoId('http://youtu.be/Uf1Vk3RnXsk'),
+        expect(
+            getYouTubeVideoId('http://youtu.be/Uf1Vk3RnXsk')
+        ).toBe(
             'Uf1Vk3RnXsk'
         );
 
-        assert.equal(
-            getYouTubeVideoId('https://youtu.be/JdxSm9-NllI?t=1s'),
+        expect(
+            getYouTubeVideoId('https://youtu.be/JdxSm9-NllI?t=1s')
+        ).toBe(
             'JdxSm9-NllI'
         );
     });
 
     it('returns passed string if not a url', function() {
-        assert.equal(
-            getYouTubeVideoId('qwgNv27366Q'),
+        expect(
+            getYouTubeVideoId('qwgNv27366Q')
+        ).toBe(
             'qwgNv27366Q'
         );
     });
-
 });
