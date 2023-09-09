@@ -6,7 +6,7 @@
 [![build](https://github.com/remarkablemark/youtube-video-id/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablemark/youtube-video-id/actions/workflows/build.yml)
 [![codecov](https://codecov.io/gh/remarkablemark/youtube-video-id/graph/badge.svg?token=PQL6PG63WG)](https://codecov.io/gh/remarkablemark/youtube-video-id)
 
-Extracts the YouTube video ID from a url or string:
+Extracts the YouTube video ID from a URL or string:
 
 ```
 YouTubeVideoId(string)
@@ -50,19 +50,16 @@ Client:
 ```html
 <script src="https://unpkg.com/youtube-video-id@latest/dist/youtube-video-id.min.js"></script>
 <script>
-  var videoId = YouTubeVideoId('https://www.youtube.com/watch?v=F2uovvU-dLA')
+  var videoId = YouTubeVideoId('https://www.youtube.com/watch?v=F2uovvU-dLA');
   console.log(videoId);
 </script>
 ```
 
 Also see [JSFiddle](https://jsfiddle.net/remarkablemark/93fkfb22/) and other [examples](examples).
 
-## Testing
+## Release
 
-```sh
-npm test
-npm run lint
-```
+Release is automated with [Release Please](https://github.com/googleapis/release-please).
 
 ## License
 
