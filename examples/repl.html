@@ -1,0 +1,17 @@
+<textarea cols="50" rows="5">
+https://www.youtube.com/watch?v=X3pTXG9a1oQ</textarea
+>
+<pre><code></code></pre>
+<script src="../dist/youtube-video-id.min.js"></script>
+
+<script>
+  const code = document.querySelector('code');
+  const textarea = document.querySelector('textarea');
+
+  textarea.addEventListener('input', (event) => {
+    cache = [];
+    code.innerText = YouTubeVideoId(event.target.value);
+  });
+
+  textarea.dispatchEvent(new Event('input'));
+</script>
