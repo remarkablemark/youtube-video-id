@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.4](https://github.com/remarkablemark/youtube-video-id/compare/v0.0.3...v0.0.4) (2023-09-09)
+
+
+### Build System
+
+* replace webpack with rollup to optimize bundle size ([fe4b1c7](https://github.com/remarkablemark/youtube-video-id/commit/fe4b1c78fb8549e9b43a3d0472315e48b2d221c4))
+
 ## [0.0.3](https://github.com/remarkablemark/youtube-video-id/compare/v0.0.2...v0.0.3) (2018-10-07)
 
 ### Features
