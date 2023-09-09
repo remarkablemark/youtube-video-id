@@ -1,53 +1,43 @@
-'use strict';
+const YouTubeVideoId = require('../');
 
-/**
- * Module dependencies.
- */
-var getYouTubeVideoId = require('../index');
+describe('YouTubeVideoId', function () {
+  describe('error', () => {
+    it.each([undefined, null, {}, [], 0, 1, () => {}, new Date()])(
+      'throws if the first argument is %p',
+      (value) => {
+        expect(() => {
+          YouTubeVideoId(value);
+        }).toThrow(TypeError);
+      }
+    );
+  });
 
-/**
- * Main tests.
- */
-describe('getYouTubeVideoId()', function () {
-  it('errors if the first parameter is not a string', function () {
-    [undefined, null, {}, [], 1, Function].forEach(function (parameter) {
-      expect(function () {
-        getYouTubeVideoId(parameter);
-      }).toThrow(TypeError);
+  describe('long url', () => {
+    it.each([
+      ['https://www.youtube.com/watch?v=X3pTXG9a1oQ', 'X3pTXG9a1oQ'],
+      ['http://www.youtube.com/watch?v=F2uovvU-dLA', 'F2uovvU-dLA'],
+      [
+        'https://www.youtube.com/watch?v=k66bOHX8MnY&feature=youtu.be',
+        'k66bOHX8MnY'
+      ]
+    ])('receives %p and returns %p', (input, output) => {
+      expect(YouTubeVideoId(input)).toBe(output);
     });
   });
 
-  it('gets the ID from long url', function () {
-    expect(
-      getYouTubeVideoId('https://www.youtube.com/watch?v=X3pTXG9a1oQ')
-    ).toBe('X3pTXG9a1oQ');
-
-    expect(
-      getYouTubeVideoId('http://www.youtube.com/watch?v=F2uovvU-dLA')
-    ).toBe('F2uovvU-dLA');
-
-    expect(
-      getYouTubeVideoId(
-        'https://www.youtube.com/watch?v=k66bOHX8MnY&feature=youtu.be'
-      )
-    ).toBe('k66bOHX8MnY');
+  describe('short url', () => {
+    it.each([
+      ['https://youtu.be/Yqnk_kjVPH4', 'Yqnk_kjVPH4'],
+      ['http://youtu.be/Uf1Vk3RnXsk', 'Uf1Vk3RnXsk'],
+      ['https://youtu.be/JdxSm9-NllI?t=1s', 'JdxSm9-NllI']
+    ])('receives %p and returns %p', (input, output) => {
+      expect(YouTubeVideoId(input)).toBe(output);
+    });
   });
 
-  it('gets the ID from short url', function () {
-    expect(getYouTubeVideoId('https://youtu.be/Yqnk_kjVPH4')).toBe(
-      'Yqnk_kjVPH4'
-    );
-
-    expect(getYouTubeVideoId('http://youtu.be/Uf1Vk3RnXsk')).toBe(
-      'Uf1Vk3RnXsk'
-    );
-
-    expect(getYouTubeVideoId('https://youtu.be/JdxSm9-NllI?t=1s')).toBe(
-      'JdxSm9-NllI'
-    );
-  });
-
-  it('returns passed string if not a url', function () {
-    expect(getYouTubeVideoId('qwgNv27366Q')).toBe('qwgNv27366Q');
+  describe('string', () => {
+    it('returns string', function () {
+      expect(YouTubeVideoId('qwgNv27366Q')).toBe('qwgNv27366Q');
+    });
   });
 });
