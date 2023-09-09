@@ -12,6 +12,8 @@ Extracts the YouTube video ID from a URL or string:
 YouTubeVideoId(string)
 ```
 
+[Replit](https://replit.com/@remarkablemark/youtube-video-id) | [JSFiddle](https://jsfiddle.net/remarkablemark/93fkfb22/) | [Examples](examples)
+
 ## Installation
 
 [NPM](https://www.npmjs.com/package/youtube-video-id):
@@ -32,30 +34,46 @@ yarn add youtube-video-id
 <script src="https://unpkg.com/youtube-video-id@latest/dist/youtube-video-id.min.js"></script>
 ```
 
-## Examples
+## Usage
 
-Server:
+### Server
+
+Import with ES Modules:
 
 ```js
-var YouTubeVideoId = require('youtube-video-id');
+import YouTubeVideoId from 'youtube-video-id';
+```
 
-// returns video ID
+Or require with CommonJS:
+
+```js
+const YouTubeVideoId = require('youtube-video-id');
+```
+
+Extract YouTube video ID from URL or string:
+
+```js
 YouTubeVideoId('https://www.youtube.com/watch?v=X3pTXG9a1oQ'); // 'X3pTXG9a1oQ'
 YouTubeVideoId('https://youtu.be/X3pTXG9a1oQ'); // 'X3pTXG9a1oQ'
 YouTubeVideoId('X3pTXG9a1oQ'); // 'X3pTXG9a1oQ'
 ```
 
-Client:
+## Client
+
+Load script:
 
 ```html
 <script src="https://unpkg.com/youtube-video-id@latest/dist/youtube-video-id.min.js"></script>
+```
+
+Extract YouTube video ID from URL or string:
+
+```html
 <script>
-  var videoId = YouTubeVideoId('https://www.youtube.com/watch?v=F2uovvU-dLA');
+  const videoId = YouTubeVideoId('https://www.youtube.com/watch?v=F2uovvU-dLA');
   console.log(videoId);
 </script>
 ```
-
-Also see [JSFiddle](https://jsfiddle.net/remarkablemark/93fkfb22/) and other [examples](examples).
 
 ## Release
 
