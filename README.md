@@ -12,7 +12,7 @@ Extracts the YouTube video ID from a URL or string:
 YouTubeVideoId(string)
 ```
 
-[Replit](https://replit.com/@remarkablemark/youtube-video-id) | [JSFiddle](https://jsfiddle.net/remarkablemark/93fkfb22/) | [Examples](examples)
+[Replit](https://replit.com/@remarkablemark/youtube-video-id) | [JSFiddle](https://jsfiddle.net/remarkablemark/93fkfb22/) | [Examples](https://github.com/remarkablemark/youtube-video-id/tree/master/examples)
 
 ## Installation
 
@@ -22,13 +22,13 @@ YouTubeVideoId(string)
 npm install youtube-video-id
 ```
 
-[Yarn](https://yarn.fyi/youtube-video-id):
+[Yarn](https://yarnpkg.com/package?name=youtube-video-id):
 
 ```sh
 yarn add youtube-video-id
 ```
 
-[CDN](https://unpkg.com/youtube-video-id/):
+[CDN](https://unpkg.com/browse/youtube-video-id/):
 
 ```html
 <script src="https://unpkg.com/youtube-video-id@latest/dist/youtube-video-id.min.js"></script>
@@ -58,7 +58,7 @@ YouTubeVideoId('https://youtu.be/X3pTXG9a1oQ'); // 'X3pTXG9a1oQ'
 YouTubeVideoId('X3pTXG9a1oQ'); // 'X3pTXG9a1oQ'
 ```
 
-## Client
+### Client
 
 Load script:
 
@@ -81,4 +81,4 @@ Release is automated with [Release Please](https://github.com/googleapis/release
 
 ## License
 
-[MIT](LICENSE)
+[MIT](https://github.com/remarkablemark/youtube-video-id/blob/master/LICENSE)
