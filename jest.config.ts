@@ -1,7 +1,7 @@
-'use strict';
+import type { Config } from 'jest';
 
-/** @type {import('jest').Config} */
-var config = {
+const config: Config = {
+  collectCoverage: true,
   coverageThreshold: {
     global: {
       branches: 100,
@@ -10,7 +10,8 @@ var config = {
       statements: 100
     }
   },
+  preset: 'ts-jest',
   verbose: true
 };
 
-module.exports = config;
+export default config;

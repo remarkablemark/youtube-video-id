@@ -1,4 +1,4 @@
-const YouTubeVideoId = require('../');
+import YouTubeVideoId from '.';
 
 describe('YouTubeVideoId', function () {
   describe('error', () => {
@@ -6,8 +6,8 @@ describe('YouTubeVideoId', function () {
       'throws if the first argument is %p',
       (value) => {
         expect(() => {
-          YouTubeVideoId(value);
-        }).toThrow(TypeError);
+          YouTubeVideoId(value as string);
+        }).toThrow(new TypeError('First argument must be a string'));
       }
     );
   });

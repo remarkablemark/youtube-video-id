@@ -1,5 +1,7 @@
 # Build
+cjs
 dist
+esm
 
 # Logs
 logs
