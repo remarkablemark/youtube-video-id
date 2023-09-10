@@ -1,4 +1,4 @@
-import YouTubeVideoId from '.';
+import YouTubeVideoId from './index';
 
 describe('YouTubeVideoId', function () {
   describe('error', () => {
