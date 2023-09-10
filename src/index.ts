@@ -16,14 +16,14 @@ const regex =
  * @param url - The URL or string.
  * @returns - The video ID.
  */
-export default function YouTubeVideoId(url: string) {
+export default function YouTubeVideoId(url: string): string {
   if (typeof url !== 'string') {
     throw new TypeError('First argument must be a string');
   }
 
   const match = url.match(regex);
 
-  if (match && match.length > 1) {
+  if (match?.length && match[2]) {
     return match[2];
   }
 

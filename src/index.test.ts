@@ -36,8 +36,8 @@ describe('YouTubeVideoId', function () {
   });
 
   describe('string', () => {
-    it('returns string', function () {
-      expect(YouTubeVideoId('qwgNv27366Q')).toBe('qwgNv27366Q');
+    it.each(['', 'qwgNv27366Q'])('returns %p', function (value) {
+      expect(YouTubeVideoId(value)).toBe(value);
     });
   });
 });
