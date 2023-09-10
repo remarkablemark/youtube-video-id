@@ -47,7 +47,7 @@ import YouTubeVideoId from 'youtube-video-id';
 Or require with CommonJS:
 
 ```js
-const YouTubeVideoId = require('youtube-video-id');
+const YouTubeVideoId = require('youtube-video-id').default;
 ```
 
 Extract YouTube video ID from URL or string:
@@ -73,6 +73,16 @@ Extract YouTube video ID from URL or string:
   const videoId = YouTubeVideoId('https://www.youtube.com/watch?v=F2uovvU-dLA');
   console.log(videoId);
 </script>
+```
+
+## Migration
+
+### v1
+
+Migrate to TypeScript and build ESM. CommonJS import now requires the `.default` key:
+
+```js
+const YouTubeVideoId = require('youtube-video-id').default;
 ```
 
 ## Release
