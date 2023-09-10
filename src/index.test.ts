@@ -8,7 +8,7 @@ describe('YouTubeVideoId', function () {
         expect(() => {
           YouTubeVideoId(value as string);
         }).toThrow(new TypeError('First argument must be a string'));
-      }
+      },
     );
   });
 
@@ -18,8 +18,8 @@ describe('YouTubeVideoId', function () {
       ['http://www.youtube.com/watch?v=F2uovvU-dLA', 'F2uovvU-dLA'],
       [
         'https://www.youtube.com/watch?v=k66bOHX8MnY&feature=youtu.be',
-        'k66bOHX8MnY'
-      ]
+        'k66bOHX8MnY',
+      ],
     ])('receives %p and returns %p', (input, output) => {
       expect(YouTubeVideoId(input)).toBe(output);
     });
@@ -29,7 +29,7 @@ describe('YouTubeVideoId', function () {
     it.each([
       ['https://youtu.be/Yqnk_kjVPH4', 'Yqnk_kjVPH4'],
       ['http://youtu.be/Uf1Vk3RnXsk', 'Uf1Vk3RnXsk'],
-      ['https://youtu.be/JdxSm9-NllI?t=1s', 'JdxSm9-NllI']
+      ['https://youtu.be/JdxSm9-NllI?t=1s', 'JdxSm9-NllI'],
     ])('receives %p and returns %p', (input, output) => {
       expect(YouTubeVideoId(input)).toBe(output);
     });

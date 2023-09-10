@@ -14,14 +14,14 @@ describe('YouTubeVideoId', () => {
   it('gets id from long url', () => {
     assert.strictEqual(
       YouTubeVideoId('https://www.youtube.com/watch?v=X3pTXG9a1oQ'),
-      'X3pTXG9a1oQ'
+      'X3pTXG9a1oQ',
     );
   });
 
   it('gets id from short url', () => {
     assert.strictEqual(
       YouTubeVideoId('https://youtu.be/Yqnk_kjVPH4'),
-      'Yqnk_kjVPH4'
+      'Yqnk_kjVPH4',
     );
   });
 

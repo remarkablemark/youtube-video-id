@@ -14,9 +14,9 @@ const getConfig = (minify = false) => ({
     file: `dist/youtube-video-id${minify ? '.min' : ''}.js`,
     format: 'umd',
     name: 'YouTubeVideoId',
-    sourcemap: true
+    sourcemap: true,
   },
-  plugins: [commonjs(), typescript(), minify && terser()]
+  plugins: [commonjs(), typescript(), minify && terser()],
 });
 
 export default [getConfig(), getConfig(true)];
