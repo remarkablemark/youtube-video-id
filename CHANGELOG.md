@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/remarkablemark/youtube-video-id/compare/v1.0.0...v1.0.1) (2023-09-10)
+
+
+### Bug Fixes
+
+* **index:** don't return undefined and always return string ([dc09d70](https://github.com/remarkablemark/youtube-video-id/commit/dc09d707d68f78eea09ceed5c3650d8fe9978b7c))
+
 ## [1.0.0](https://github.com/remarkablemark/youtube-video-id/compare/v0.0.4...v1.0.0) (2023-09-10)
 
 
