@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.0](https://github.com/remarkablemark/youtube-video-id/compare/v0.0.4...v1.0.0) (2023-09-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* CommonJS import requires `.default` key
+
+### Build System
+
+* refactor to TypeScript and build ESM ([0c92c02](https://github.com/remarkablemark/youtube-video-id/commit/0c92c026b018b616316b1187c1cda3f162e1c4c9))
+
 ## [0.0.4](https://github.com/remarkablemark/youtube-video-id/compare/v0.0.3...v0.0.4) (2023-09-09)
 
 
