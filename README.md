@@ -6,7 +6,7 @@
 [![build](https://github.com/remarkablemark/youtube-video-id/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablemark/youtube-video-id/actions/workflows/build.yml)
 [![codecov](https://codecov.io/gh/remarkablemark/youtube-video-id/graph/badge.svg?token=PQL6PG63WG)](https://codecov.io/gh/remarkablemark/youtube-video-id)
 
-Extracts the YouTube video ID from a URL or string:
+:tv: Extract the YouTube video ID from a string or URL:
 
 ```
 YouTubeVideoId(string)
