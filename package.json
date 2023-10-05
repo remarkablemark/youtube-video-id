@@ -41,7 +41,7 @@
     "string"
   ],
   "devDependencies": {
-    "@rollup/plugin-commonjs": "25.0.4",
+    "@rollup/plugin-commonjs": "25.0.5",
     "@rollup/plugin-terser": "0.4.4",
     "@rollup/plugin-typescript": "11.1.5",
     "@types/jest": "29.5.5",
