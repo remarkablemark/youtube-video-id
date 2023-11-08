@@ -3,19 +3,19 @@
   "version": "1.0.1",
   "description": "Extracts the YouTube video ID from a URL or string.",
   "author": "Mark <mark@remarkablemark.org>",
-  "main": "cjs/index.js",
-  "module": "esm/index.js",
+  "main": "./cjs/index.js",
+  "module": "./esm/index.mjs",
+  "types": "./cjs/index.d.ts",
   "exports": {
-    "import": "./esm/index.js",
+    "import": "./esm/index.mjs",
     "require": "./cjs/index.js"
   },
   "scripts": {
-    "build": "npm run build:cjs && npm run build:esm && npm run build:umd",
-    "build:cjs": "tsc --module commonjs --outDir cjs",
-    "build:esm": "tsc",
+    "build": "npm run build:cjs && npm run build:umd",
+    "build:cjs": "tsc",
     "build:umd": "rollup --config --failAfterWarnings",
     "build:watch": "tsc --watch",
-    "clean": "rm -rf cjs coverage dist esm",
+    "clean": "rm -rf cjs coverage dist",
     "docs": "typedoc",
     "lint": "eslint --ignore-path .gitignore --ext .js,.mjs,.ts .",
     "lint:fix": "npm run lint -- --fix",
@@ -23,7 +23,7 @@
     "prepublishOnly": "npm run lint && npm run lint:tsc && npm run test:ci && npm run test:esm && npm run clean && npm run build",
     "test": "jest",
     "test:ci": "jest --ci --coverage --colors",
-    "test:esm": "npm run build:esm && node --test src",
+    "test:esm": "npm run build:cjs && node --test src",
     "test:watch": "jest --watch"
   },
   "repository": {
