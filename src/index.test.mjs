@@ -2,7 +2,7 @@ import { describe, it } from 'node:test';
 
 import assert from 'assert';
 
-import YouTubeVideoId from '../esm/index.js';
+import YouTubeVideoId from '../esm/index.mjs';
 
 describe('YouTubeVideoId', () => {
   it('throws error for invalid argument', () => {
