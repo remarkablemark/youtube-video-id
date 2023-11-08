@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/remarkablemark/youtube-video-id/compare/v1.0.1...v1.0.2) (2023-11-08)
+
+
+### Bug Fixes
+
+* **package:** fix unexpected module syntax ([4286b00](https://github.com/remarkablemark/youtube-video-id/commit/4286b00b4ca4fa59c17cf63777c4d337378f01e9))
+
 ## [1.0.1](https://github.com/remarkablemark/youtube-video-id/compare/v1.0.0...v1.0.1) (2023-09-10)
 
 
