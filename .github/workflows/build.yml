@@ -15,10 +15,7 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm install
-
-      - name: Install dependencies
-        run: npm install --prefer-offline
+        run: npm ci --prefer-offline
 
       - name: Run ESLint
         run: npm run lint
@@ -29,8 +26,8 @@ jobs:
       - name: Run tests
         run: npm run test:ci
 
-      - name: Run module tests
-        run: npm run test:esm
-
       - name: Codecov
         uses: codecov/codecov-action@v3
+
+      - name: Run module tests
+        run: npm run test:esm
