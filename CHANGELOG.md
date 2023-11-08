@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/remarkablemark/youtube-video-id/compare/v1.0.2...v1.0.3) (2023-11-08)
+
+
+### Bug Fixes
+
+* **package:** fix no types ([ac9e9b3](https://github.com/remarkablemark/youtube-video-id/commit/ac9e9b357c53c58c65f6d90f87c7b8f9db5a2cf6))
+
 ## [1.0.2](https://github.com/remarkablemark/youtube-video-id/compare/v1.0.1...v1.0.2) (2023-11-08)
 
 
