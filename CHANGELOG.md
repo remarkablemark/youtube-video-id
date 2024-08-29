@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/remarkablemark/youtube-video-id/compare/v1.0.3...v1.0.4) (2024-08-29)
+
+
+### Continuous Integration
+
+* **github:** publish package to npm registry with provenance ([8a812d4](https://github.com/remarkablemark/youtube-video-id/commit/8a812d4a51ff72c0675a75e11b377dd641b824c9))
+
 ## [1.0.3](https://github.com/remarkablemark/youtube-video-id/compare/v1.0.2...v1.0.3) (2023-11-08)
 
 
