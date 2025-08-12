@@ -10,8 +10,9 @@ const config: Config = {
       statements: 100,
     },
   },
+  moduleFileExtensions: ['js', 'ts'],
   preset: 'ts-jest',
-  verbose: true,
+  testEnvironment: 'node',
 };
 
 export default config;
