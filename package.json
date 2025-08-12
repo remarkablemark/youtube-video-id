@@ -24,7 +24,7 @@
     "prepublishOnly": "npm run lint && npm run lint:tsc && npm run test:ci && npm run test:esm && npm run clean && npm run build",
     "test": "jest",
     "test:ci": "jest --ci --coverage --colors",
-    "test:esm": "npm run build:cjs && node --test src",
+    "test:esm": "npm run build:cjs && node --test",
     "test:watch": "jest --watch"
   },
   "repository": {
