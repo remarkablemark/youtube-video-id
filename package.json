@@ -42,7 +42,7 @@
     "string"
   ],
   "devDependencies": {
-    "@eslint/compat": "1.4.1",
+    "@eslint/compat": "2.0.0",
     "@eslint/eslintrc": "3.3.1",
     "@eslint/js": "9.39.1",
     "@rollup/plugin-commonjs": "29.0.0",
